@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  z-index: 99;
+  align-items: center;
+}
+
+body{
+  position: relative;
+  
+  justify-content: center;
+  align-content: center;
+  background-color: #212C4F;
+  color: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar{
+  display: flex;
+  width: 90%;
+}
+
+.menu {
+  width: 80%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu nav ul li {
+  display: inline;
+}
+
+ul {
+  margin: 0;
+
+}
+
+.lista{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.site-socials{
+  width: 20%;
+  display: flex;
+}
+
+
+.logotipo {
+  justify-content: center;
+  width: 10%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.logotipo img{
+  width: 64px;
+  height: 64px;
+  padding: 4px;
+}
+
+fieldset{
+  display: grid;
+  width: auto;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+h1{
+    color: #00E3A2;
+    font-family:'BioRhyme' , serif;
+}
+
+
+section{
+  padding: 3rem 0rem 3rem 0rem;
+  margin: 3rem 0rem 3rem 0rem;
+  border: 2rem;
+}
+
+.site-socials{
+  width: 16px;
+  height: 16px;
+  padding: 10px;
+  margin: 16px;
+  cursor: pointer;
+}
+
+.contact-gif{
+  width: 400px;
+}  
+  .container {
+    width: 400px;
+    padding: 8px 16px;
+  }
+
+
+  .button {
+    display: block;
+    width: 30rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #212C4F;
+    background-color: #00E3A2;
+    border: none;
+    border-radius: .4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .button:hover, .button:active {
+    background-color: #00C18A;
+  }
+  .button:hover span, .button:active span {
+    margin-left: 1.5rem;
+  }
+
+  input, textarea {
+    background-color: #212C4F;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+
+  tr:nth-child(even) {background-color: #191A1D;
+  color: white;}
+
+  /* cards */
+
+
+
+.grid {
+  display: grid;
+  width: auto;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+.gif__item, .profile__item {
+  border-radius: .4rem;
+  overflow: hidden;
+  margin: 2rem;
+}
+.grid__item {
+  background-color: #304072;
+  border-radius: .4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.grid__item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.card__content {
+  padding: 3rem 3rem;
+}
+.card__header {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #00E3A2;
+  margin: 1.5rem;
+  text-align: center;
+}
+.card__text {
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  line-height: 1.7;
+  color: #ffffff;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.card__btn {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #212C4F;
+  background-color: #00E3A2;
+  border: none;
+  border-radius: .4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card__btn:hover, .card__btn:active {
+  background-color: #00C18A;
+}
+.card__btn:hover span, .card__btn:active span {
+  margin-left: 1.5rem;
+}
+
+
+/* galeria */
+
+@keyframes slideshow {
+	10% {left: 0;}
+	20% {left: 0;}
+	30% {left: -100%;}
+	40% {left: -100%;}
+	50% {left: -200%;}
+	60% {left: -200%;}
+	70% {left: -300%;}
+	80% {left: -300%;}
+	90% {left: -400%;}
+	100% {left: -400%}
+}
+
+#slider{
+  overflow:hidden;
+  width:50%;
+  margin:5px auto;
+  border: 5px solid transparent;
+  border-radius: 10px;
+}
+
+#slider figure img{
+  width:20%;
+  float:left;
+}
+
+#slider figure{
+  position:relative;
+  width:500%;
+  margin:0;
+  left:0;
+  text-align:left;
+  animation:20s slideshow infinite
+}
+
+/* form */
+
+input, textarea[type=text], select {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 24px 8px 24px 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+  background-color: #00C18A;
+}
