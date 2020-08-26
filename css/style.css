@@ -23,13 +23,17 @@ header{
 }
 
 body{
-  position: relative;
-  
-  justify-content: center;
-  align-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  vertical-align: baseline;
   background-color: #212C4F;
   color: #ffffff;
   font-family: 'Ubuntu', sans-serif;
+
 }
 
 .navbar{
@@ -42,27 +46,41 @@ body{
   justify-content: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
-.menu nav ul li {
-  display: inline;
+.menu nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 ul {
+  width: 100%;
+  display: flex;
   margin: 0;
-
+  list-style: none;
+  justify-content:space-around;
+  padding: 0;
 }
 
 .lista{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   
 }
 
 .site-socials{
-  width: 20%;
+  width: 8%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.site-socials a{
+padding: 0 4px;
+}
+
 
 
 .logotipo {
@@ -76,7 +94,7 @@ ul {
 .logotipo img{
   width: 64px;
   height: 64px;
-  padding: 4px;
+  padding: 5px;
 }
 
 fieldset{
@@ -101,10 +119,13 @@ section{
 }
 
 .site-socials{
-  width: 16px;
-  height: 16px;
+  width: 8%;
   padding: 10px;
-  margin: 16px;
+  cursor: pointer;
+}
+
+.site-socials a{
+  margin: 0 10px;
   cursor: pointer;
 }
 
