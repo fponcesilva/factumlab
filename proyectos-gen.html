@@ -3,108 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Proyectos </title>
-  <link rel="stylesheet" href="./css/style.css">
+  <title> Inicio </title>
   <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header> 
-      <div class="navbar">
-      <div class="logotipo">
-        <a class="logo" href="index.html"><img src="./svg/factum_lab_logo.svg" alt="logotipo"></a>
-      </div>
-      <div class="menu">
-        <nav class="lista">
-          <ul>
-              <li><a href="./index.html">Inicio</a></li>
-              <li><a href="./quienes-somos.html">Quienes somos</a></li>
-              <li><a href="./proyectos-gen.html">Proyectos</a></li>
-              <li><a href="./contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
-        <div class="site-socials">
-          <a href="https://www.facebook.com/"><img src="./svg/facebook.svg" alt="Facebook"></a>
-          <a href="https://www.instagram.com/"><img src="./svg/instagram.svg" alt="Facebook"></a>
+      <nav class="navbar navbar-expand-lg navbar-light">
+<a class="navbar-brand" href="index.html"> <img src="svg/factum_lab_logo.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">Factum Lab</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Inicio </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="quienes-somos.html">Quiénes Somos</a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Proyectos <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contacto.html">Contacto</a>
+    </li>
+  </ul>
+  <a class="navbar-brand" href="#"> <img src="svg/facebook.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"></a>
+  <a class="navbar-brand" href="#"> <img src="svg/instagram.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"></a>
+</div>
+</nav>
+  </header>
+      <!--ESTO DEBERÍA SER IGUAL PARA CUALQUIER SECCIÓN-->
+     
+      <main>
+      <h1>Proyectos</h1>
+
+      <div class="card-deck">
+        <div class="card proj">
+          <img src="img/ui1.png" class="card-img-top" alt="Proyecto Río">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto Rio</h5>
+          </div>
+        </div>
+        <div class="card proj">
+          <img src="img/ui2.png" class="card-img-top" alt="Proyecto Tokio">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto Tokio</h5>
+          </div>
+        </div>
+        <div class="card proj">
+          <img src="img/ui3.png" class="card-img-top" alt="Proyecto Lisboa">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto Lisboa</h5>
+          </div>
         </div>
       </div>
-    </header>
-      <!--ESTO DEBERÍA SER IGUAL PARA CUALQUIER SECCIÓN-->
-      <h1>Proyectos</h1>
-        <section class="grid">
 
-          <div class="card"><a href="./proyecto-esp.html"><img class="card__img" src="img/ui1.png" alt="Proyecto Río"></a>
-            <div class="card__content">
-              <h4 class="card__header">Proyecto Rio</h4>
-              <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+      <div class="card-deck">
+        <div class="card proj">
+          <img src="img/ui4.png" class="card-img-top" alt="Proyecto Nairobi">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto Nairobi</h5>
           </div>
-
-
-          <div class="card"><a href="./proyecto-esp.html"><img class="card__img" src="img/ui2.png" alt="Proyecto Tokio"></a>
-            <div class="card__content">
-              <h4 class="card__header">Proyecto Tokio</h4>
-              <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+        </div>
+        <div class="card proj">
+          <img src="img/ui5.png" class="card-img-top" alt="Proyecto Berlín">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto Berlín</h5>
           </div>
-
-          <div class="card"><a href="./proyecto-esp.html"><img class="card__img" src="img/ui3.png" alt="Proyecto Lisboa"></a>
-            <div class="card__content">
-              <h4 class="card__header">Proyecto Lisboa</h4>
-              <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+        </div>
+        <div class="card proj">
+          <img src="img/ui6.png" class="card-img-top" alt="Proyecto Denver">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto Denver</h5>
           </div>
+        </div>
+      </div>
 
-          <div class="card"><a href="./proyecto-esp.html"><img class="card__img" src="img/ui4.png" alt="Proyecto Nairobi"></a>
-            <div class="card__content">
-              <h4 class="card__header">Proyecto Nairobi</h4>
-              <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+      <div class="card-deck">
+        <div class="card proj">
+          <img src="img/ui7.png" class="card-img-top" alt="Proyecto Oslo">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto Oslo</h5>
           </div>
-
-
-          <div class="card"><a href="./proyecto-esp.html"><img class="card__img" src="img/ui5.png" alt="Proyecto Berlin"></a>
-            <div class="card__content">
-              <h4 class="card__header">Proyecto Berlin</h4>
-              <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+        </div>
+        <div class="card proj">
+          <img src="img/ui8.png" class="card-img-top" alt="Proyecto Marsella">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto Marsella</h5>
           </div>
-
-          <div class="card"><a href="./proyecto-esp.html"><img class="card__img" src="img/ui6.png" alt="Proyecto Denver"></a>
-            <div class="card__content">
-              <h4 class="card__header">Proyecto Denver</h4>
-              <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+        </div>
+        <div class="card proj">
+          <img src="img/ui9.png" class="card-img-top" alt="Proyecto Lima">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto Lima</h5>
           </div>
+        </div>
+      </div>
 
-
-          <div class="card"><a href="./proyecto-esp.html"><img class="card__img" src="img/ui7.png" alt="Proyecto Oslo"></a>
-            <div class="card__content">
-              <h4 class="card__header">Proyecto Oslo</h4>
-              <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-
-
-          <div class="card"><a href="./proyecto-esp.html"><img class="card__img" src="img/ui8.png" alt="Proyecto Marsella"></a>
-            <div class="card__content">
-              <h4 class="card__header">Proyecto Marsella</h4>
-              <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-
-          <div class="card"><a href="./proyecto-esp.html"><img class="card__img" src="img/ui9.png" alt="Proyecto Lima"></a>
-            <div class="card__content">
-              <h4 class="card__header">Proyecto Lima</h4>
-              <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-            </section>
             <!--MOSTRAR 1 IMAGEN POR PROYECTO Y EN HOVER LA IMAGEN CAMBIA POR UN WIREFRAME U OTRA PANTALLA DEL MISMO PROYECTO)-->
             <!--MOSTRAR IMAGENES EN MOSAICO DE 2 Y 3 COLUMNAS-->
-        <footer>
-          <span>© 2020 Factum Lab Todos los derechos reservados</span>
-              </footer>        
-  </body>
+          </main>
+          <footer>
+            <span class= "container-fluid d-flex justify-content-center">© 2020 Factum Lab Todos los derechos reservados</span>
+                </footer>    
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+                <script type="text/javascript" src="js/bootstrap.min.js"></script>
+            </body>
 </html>

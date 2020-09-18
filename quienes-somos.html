@@ -3,95 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Quiénes somos </title>
-  <link rel="stylesheet" href="./css/style.css">
+  <title> Inicio </title>
   <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header> 
-      <div class="navbar">
-      <div class="logotipo">
-        <a class="logo" href="index.html"><img src="./svg/factum_lab_logo.svg" alt="logotipo"></a>
-      </div>
-      <div class="menu">
-        <nav class="lista">
-          <ul>
-              <li><a href="./index.html">Inicio</a></li>
-              <li><a href="./quienes-somos.html">Quienes somos</a></li>
-              <li><a href="./proyectos-gen.html">Proyectos</a></li>
-              <li><a href="./contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
-        <div class="site-socials">
-          <a href="https://www.facebook.com/"><img src="./svg/facebook.svg" alt="Facebook"></a>
-          <a href="https://www.instagram.com/"><img src="./svg/instagram.svg" alt="Facebook"></a>
-        </div>
-      </div>
+<header> 
+        <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html"> <img src="svg/factum_lab_logo.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">Factum Lab</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Inicio </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Quiénes Somos <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="proyectos-gen.html">Proyectos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contacto.html">Contacto</a>
+      </li>
+    </ul>
+    <a class="navbar-brand" href="#"> <img src="svg/facebook.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"></a>
+    <a class="navbar-brand" href="#"> <img src="svg/instagram.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"></a>
+  </div>
+</nav>
     </header>
       <!--ESTO DEBERÍA SER IGUAL PARA CUALQUIER SECCIÓN-->
+      <main>
       <h1>Quienes somos</h1>
-      <section>
+
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget erat id enim congue suscipit non quis nisl. Donec sed fringilla mi, in malesuada justo.</h3>
-        <img src="img/teamwork.jpeg">
-      </section>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/teamwork1.jpeg" class="d-block w-100" alt="Equipo realizando una lluvia de ideas">
+            </div>
+            <div class="carousel-item">
+              <img src="img/teamwork2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/teamwork3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
       
+        <h2>Nuestro Equipo</h2>
 
-      <section class="grid">
-                  <div class="profile__item">
-                    <div class="card"><img class="card__img" src="img/peo5.jpeg" alt="Franco Ponce">
-                      <div class="card__content">
-                        <h5 class="card__header">Franco Ponce</h5><p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget erat id enim congue suscipit non quis.</p>
-                      </div>
-                    </div>
-                  </div>
+        <div class="card-deck">
+          <div class="card">
+            <img src="img/peo5.jpeg" class="card-img-top" alt="Franco Ponce">
+            <div class="card-body">
+             <h4 class="card-title">Franco Ponce</h4><p>HLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget erat id enim congue suscipit non quis.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/peo9.jpeg" class="card-img-top" alt="Jackelyn Giuliana">
+            <div class="card-body">
+             <h4 class="card-title">Jackelyn Giuliana</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget erat id enim congue suscipit non quis.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/peo3.jpeg" class="card-img-top" alt="Israel Ubaldo">
+            <div class="card-body">
+             <h4 class="card-title">Israel Ubaldo</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget erat id enim congue suscipit non quis.</p>
+            </div>
+          </div>
+        </div>
 
-                  <div class="profile__item">
-                    <div class="card"><img class="card__img" src="img/peo9.jpeg" alt="Jackelyn Giuliana">
-                      <div class="card__content">
-                        <h5 class="card__header">Jackelyn Giuliana</h5><p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget erat id enim congue suscipit non quis.</p>
-                      </div>
-                    </div>
-                  </div>
+        <div class="card-deck">
+          <div class="card">
+            <img src="img/peo3.jpeg" class="card-img-top" alt="Jorge La Rosa">
+            <div class="card-body">
+             <h4 class="card-title">Jorge La Rosa</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget erat id enim congue suscipit non quis.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/peo8.jpeg" class="card-img-top" alt="Paula Staurini">
+            <div class="card-body">
+             <h4 class="card-title">Paula Staurini</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget erat id enim congue suscipit non quis.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/peo1.jpeg" class="card-img-top" alt="Alejandro Zambrano">
+            <div class="card-body">
+             <h4 class="card-title">Alejandro Zambrano</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget erat id enim congue suscipit non quis.</p>
+            </div>
+          </div>
+        </div>
 
-                  <div class="profile__item">
-                    <div class="card"><img class="card__img" src="img/peo3.jpeg" alt="Israel Ubaldo">
-                      <div class="card__content">
-                        <h5 class="card__header">Israel Ubaldo</h5><p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget erat id enim congue suscipit non quis.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="profile__item">
-                    <div class="card"><img class="card__img" src="img/peo1.jpeg" alt="Jorge La Rosa">
-                      <div class="card__content">
-                        <h5 class="card__header">Jorge La Rosa</h5><p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget erat id enim congue suscipit non quis.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="profile__item">
-                    <div class="card"><img class="card__img" src="img/peo7.jpeg" alt="Paula Staurini">
-                      <div class="card__content">
-                        <h5 class="card__header">Paula Staurini</h5><p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget erat id enim congue suscipit non quis.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="profile__item">
-                    <div class="card"><img class="card__img" src="img/peo4.jpeg" alt="Alejandro Zambrano">
-                      <div class="card__content">
-                        <h5 class="card__header">Alejandro Zambrano</h5><p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget erat id enim congue suscipit non quis.</p>
-                      </div>
-                    </div>
-                  </div>
-
-            </section>
             <!--MOSTRAR 1 IMAGEN POR INTEGRANTE EN UNA POSE Y EN HOVER LA IMAGEN CAMBIA A OTRA DE LA MISMA PERSONA-->
             <!--PASAR IMÁGENES A 2 O 3 COLUMNAS-->
-            <footer>
-              <span>© 2020 Factum Lab Todos los derechos reservados</span>
-                  </footer>    
-  </body>
+          </main>
+          <footer>
+            <span class= "container-fluid d-flex justify-content-center">© 2020 Factum Lab Todos los derechos reservados</span>
+                </footer>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+                <script type="text/javascript" src="js/bootstrap.min.js"></script>
+          </body>
 </html>

@@ -1,127 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Inicio </title>
-  <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-  </head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
   <body>
     <header> 
-      <div class="navbar">
-      <div class="logotipo">
-        <a class="logo" href="index.html"><img src="./svg/factum_lab_logo.svg" alt="logotipo"></a>
-      </div>
-      <div class="menu">
-        <nav class="lista">
-          <ul>
-              <li><a href="./index.html">Inicio</a></li>
-              <li><a href="./quienes-somos.html">Quienes somos</a></li>
-              <li><a href="./proyectos-gen.html">Proyectos</a></li>
-              <li><a href="./contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
-        <div class="site-socials">
-          <a href="https://www.facebook.com/"><img src="./svg/facebook.svg" alt="Facebook"></a>
-          <a href="https://www.instagram.com/"><img src="./svg/instagram.svg" alt="Facebook"></a>
-        </div>
-      </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"> <img src="svg/factum_lab_logo.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">Factum Lab</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="quienes-somos.html">Quiénes Somos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="proyectos-gen.html">Proyectos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contacto.html">Contacto</a>
+      </li>
+    </ul>
+    <a class="navbar-brand" href="#"> <img src="svg/facebook.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"></a>
+    <a class="navbar-brand" href="#"> <img src="svg/instagram.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"></a>
+  </div>
+</nav>
     </header>
-      <!--ESTO DEBERÍA SER IGUAL PARA CUALQUIER SECCIÓN-->
-      <h1>Factum Lab</h1>
-      <section>
-        <fieldset>
-            <legend><h2>Diseños enfocados en la necesidad de tu marca y tus clientes</h2></legend>
-            <div class="grid">
-            <div class="gif__item">
-              <div class="card"><img class="card__img" src="img/c_branding.gif" alt="Branding">
-                <div class="card__content">
-                  <h4 class="card__header">Branding</h4>
-                </div>
-              </div>
+      <!--MISMO HEADER PARA CUALQUIER SECCIÓN-->
+
+      <main>
+
+        <h2>Diseños enfocados en la necesidad de tu marca y tus clientes</h2>
+
+         <div class="card-deck">
+          <div class="card">
+            <img src="img/c_branding.gif" class="card-img-top" alt="Imagen Branding">
+            <div class="card-body">
+              <h5 class="card-title">Branding</h5>
             </div>
-            <div class="gif__item">
-              <div class="card"><img class="card__img" src="img/c_uxui.gif" alt=" UX UI">
-                <div class="card__content">
-                  <h4 class="card__header">UX / UI</h4>
-                </div>
-              </div>
+          </div>
+          <div class="card">
+            <img src="img/c_uxui.gif" class="card-img-top" alt="Imagen UX UI">
+            <div class="card-body">
+              <h5 class="card-title">UX / UI</h5>
             </div>
-            <div class="gif__item">
-              <div class="card"><img class="card__img" src="img/c_publicidad.gif" alt="Publicidad">
-                <div class="card__content">
-                  <h4 class="card__header">Publicidad</h4>
-                </div>
-              </div>
+          </div>
+          <div class="card">
+            <img src="img/c_publicidad.gif" class="card-img-top" alt="Imagen Publicidad">
+            <div class="card-body">
+              <h5 class="card-title">Publicidad</h5>
             </div>
+          </div>
         </div>
-        </fieldset>
-      </section>
-        <section>
 
-              <div class="grid">
-  <div class="grid__item">
-    <div class="card"><img class="card__img" src="img/ui1.png" alt="Proyecto Tokio">
-      <div class="card__content">
-        <h4 class="card__header">Proyecto Tokio</h4>
-      </div>
-    </div>
-  </div>
-  <div class="grid__item">
-    <div class="card"><img class="card__img" src="img/ui3.png" alt="Proyecto Marsella">
-      <div class="card__content">
-        <h4 class="card__header">Proyecto Marsella</h4>
-      </div>
-    </div>
-  </div>
-  <div class="grid__item">
-    <div class="card"><img class="card__img" src="img/ui4.png" alt="Proyecto Río">
-      <div class="card__content">
-        <h4 class="card__header">Proyecto Rio</h4>
-      </div>
-    </div>
-  </div>
-              <input class="button" name="boton" value="Cargar más Proyectos">
+            <!-- PROYECTOS -->
+
+            <h2>Algunos de nuestros proyectos</h2>
+
+            <div class="card-deck">
+              <div class="card proj">
+                <img src="img/ui1.png" class="card-img-top" alt="Proyecto Tokio">
+                <div class="card-body">
+                  <h5 class="card-title">Proyecto Tokio</h5>
+                </div>
+              </div>
+              <div class="card proj">
+                <img src="img/ui3.png" class="card-img-top" alt="Proyecto Marsella">
+                <div class="card-body">
+                  <h5 class="card-title">Proyecto Marsella</h5>
+                </div>
+              </div>
+              <div class="card proj">
+                <img src="img/ui4.png" class="card-img-top" alt="Proyecto Río">
+                <div class="card-body">
+                  <h5 class="card-title">Proyecto Río</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class= "container-fluid d-flex justify-content-center">
+            <input class="button" name="boton" value="Ver más sobre el equipo">
+          </div>
+      <!-- NOSOTROS -->
+
+      <h2>Nuestro equipo</h2>
+
+      <div class="card-deck">
+       <div class="card">
+         <img src="img/peo3.jpeg" class="card-img-top" alt="Franco Ponce - Head of Brand">
+         <div class="card-body">
+          <h4 class="card-title">Franco Ponce</h4><p>Head of Brand</p>
+         </div>
+       </div>
+       <div class="card">
+         <img src="img/peo8.jpeg" class="card-img-top" alt="Jackelyn Giuliana - Head of Experience">
+         <div class="card-body">
+          <h4 class="card-title">Jackelyn Giuliana</h4><p>Head of Experience</p>
+         </div>
+       </div>
+       <div class="card">
+         <img src="img/peo1.jpeg" class="card-img-top" alt="Israel Ubaldo - Head of Art">
+         <div class="card-body">
+          <h4 class="card-title">Israel Ubaldo</h4><p>Head of Art</p>
+         </div>
+       </div>
+     </div>
+
+     <div class= "container-fluid d-flex justify-content-center">
+        <input class="button" name="boton" value="Ver más sobre el equipo">
 </div>
-
-
-            <!--MOSTRAR 1 IMAGEN POR PROYECTO Y EN HOVER LA IMAGEN CAMBIA POR UN WIREFRAME U OTRA PANTALLA DEL MISMO PROYECTO)-->
-                <section>
-                  <fieldset class="grid">
-                  <legend><h2>Nuestro Equipo</h2></legend>
-                  <div class="grid">
-                    <div class="profile__item">
-                      <div class="card"><img class="card__img" src="img/peo3.jpeg" alt="Franco Ponce">
-                        <div class="card__content">
-                          <h4 class="card__header">Franco Ponce</h4><p class="card__text">Head of Brand</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="profile__item">
-                      <div class="card"><img class="card__img" src="img/peo8.jpeg" alt="Jackelyn Giuliana">
-                        <div class="card__content">
-                          <h4 class="card__header">Jackelyn Giuliana</h4><p class="card__text">Head of Product Design</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="profile__item">
-                      <div class="card"><img class="card__img" src="img/peo1.jpeg" alt="Israel Ubaldo">
-                        <div class="card__content">
-                          <h4 class="card__header">Israel Ubaldo</h4><p class="card__text">Head of Art</p>
-                        </div>
-                      </div>
-                    </div>
-                    <input class="button" name="boton" value="Ver más sobre el equipo">
-                  </div>
-
-            </fieldset>
-            </section>
+    </main>
             <!--MOSTRAR 1 IMAGEN POR INTEGRANTE EN UNA POSE Y EN HOVER LA IMAGEN CAMBIA A OTRA DE LA MISMA PERSONA-->
       <footer>
-  <span>© 2020 Factum Lab Todos los derechos reservados</span>
+  <span class= "container-fluid d-flex justify-content-center">© 2020 Factum Lab Todos los derechos reservados</span>
       </footer>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </body>
 </html>

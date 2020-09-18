@@ -1,0 +1,249 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: $bg;
+  color: $txt;
+  font-family: 'Ubuntu', sans-serif;
+  position: absolute;
+  width: 100%;
+  overflow-x: hidden;
+  vertical-align: baseline;
+}
+
+section, div{
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+h1{
+  color: $h1;
+  font-family:'BioRhyme' , serif;
+  padding: 2.5rem;
+}
+
+h2, h3, h4, h5, h6, p{
+  margin: 2.5rem;
+}
+
+/* cabecera */
+
+header{
+  background: $header;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+     .navbar{
+      width: 100%;
+
+      .navbar-light .navbar-nav .nav-link:hover {
+       color: $h1;
+       }
+    
+      .navbar-nav {
+      width: 100%;
+      justify-content:space-around;
+      }
+    
+      .nav-item .navbar-light .navbar-toggler {
+      color: $txt;
+      border:none;
+      outline: none;
+     }
+
+  }
+
+}
+
+
+
+
+  /* cards */
+
+  .cat_title{
+    grid-column: 1 / 4;
+    z-index: 2;
+  }
+
+  .card{
+  background: $bg;
+  border: none;
+  }
+
+  .card-title{
+    margin: 0.2rem;
+    padding: 0.2rem;
+    text-align: center;
+  }
+
+  .card-body p{
+    text-align: center;
+    margin: 0.2rem;
+    padding: 0.2rem;
+  }
+
+  .proj:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 1rem 4rem $gray;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .button {
+    display: block;
+    width: 15rem;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: $h1;
+    border: 2px solid $h1;
+    border-radius: 0.2rem;
+    transition: 0.5s;
+    cursor: pointer;
+    align-self: center;
+
+    &:hover {
+      color: $gray;
+      background-color: $h1;
+    }
+
+  }
+  
+
+
+/* galeria */
+
+.galeryGrid{
+  height: 100%;
+  display: grid;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  text-align: center;
+
+}
+
+.galeryGrid__box{
+  align-self: center;
+  border-radius: 0.2rem;
+  margin: 0.2rem;
+}
+
+.img1{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  object-fit: cover;
+  align-self: center;
+}
+
+.img2{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  object-fit: cover;
+  align-self: center;
+}
+
+.img3{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  object-fit: cover;
+  align-self: center;
+}
+
+.galeryGrid__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  align-self: center;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+  /* contacto */
+
+  .contact {
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 1fr;
+
+  .form {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .map {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  iframe {
+      margin: 3rem;
+    }
+
+  }
+  
+    
+    @media screen and (max-width: $screen_medium) {
+      .contact {
+        display: grid;
+        grid-column: 1fr;
+        grid-row: 1fr 1fr;
+    
+      .form {
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+    
+      .map {
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+      iframe {
+          margin: 3rem;
+        }
+    
+      }
+    }
+
+  
+    input, textarea {
+      background: $bg;
+      color: $txt;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    input, textarea[type=text], select {
+      width: 90%;
+      padding: 16px 20px;
+      margin: 24px 8px 24px 8px;
+      border: 1px solid $txt;
+      border-radius: 4px;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+    
+    input[type=submit]:hover {
+      background-color: $h1;
+    }
+    
+    /* footer */
+
+    footer{
+      background: $txt;
+      color: $bg;
+      width: 100%;
+      padding: 2rem;
+    }

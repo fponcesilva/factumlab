@@ -3,74 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Contacto </title>
-  <link rel="stylesheet" href="./css/style.css">
+  <title> Inicio </title>
   <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header> 
-      <div class="navbar">
-      <div class="logotipo">
-        <a class="logo" href="index.html"><img src="./svg/factum_lab_logo.svg" alt="logotipo"></a>
-      </div>
-      <div class="menu">
-        <nav class="lista">
-          <ul>
-              <li><a href="./index.html">Inicio</a></li>
-              <li><a href="./quienes-somos.html">Quienes somos</a></li>
-              <li><a href="./proyectos-gen.html">Proyectos</a></li>
-              <li><a href="./contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
-        <div class="site-socials">
-          <a href="https://www.facebook.com/"><img src="./svg/facebook.svg" alt="Facebook"></a>
-          <a href="https://www.instagram.com/"><img src="./svg/instagram.svg" alt="Facebook"></a>
-        </div>
-      </div>
-    </header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+<a class="navbar-brand" href="index.html"> <img src="svg/factum_lab_logo.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">Factum Lab</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Inicio </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="quienes-somos.html">Quiénes Somos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="proyectos-gen.html">Proyectos</a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Contacto <span class="sr-only">(current)</span></a>
+    </li>
+  </ul>
+  <a class="navbar-brand" href="#"> <img src="svg/facebook.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"></a>
+  <a class="navbar-brand" href="#"> <img src="svg/instagram.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"></a>
+</div>
+</nav>
+  </header>
     <!--ESTO DEBERÍA SER IGUAL PARA CUALQUIER SECCIÓN-->
+    <main>
       <h1>Contacto</h1>
-      <section>
-        <h3>Nos encontramos en:</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9319.836664736187!2d-76.95149515984903!3d-12.071272935711608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x669423ed7d729c9a!2sRoll%20Star%20Sushi%20Bar!5e0!3m2!1ses-419!2spe!4v1597738982616!5m2!1ses-419!2spe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <table>
-          <tr>
-            <td>Dirección</td>
-            <td>Calle Los Madrigales 145. Urbanización Santa Felicia, La Molina</td>
-          </tr>
-              <tr>
-                <td>Correo electrónico</td>
-                <td>hola@factumlab.pe</td>
-              </tr>
-              <tr>
-                <td>Número celular</td>
-                <td>+51 971 292 387</td>
-              </tr>
-      </table>
-        <section>
-
-          <img class="contact-gif" src="img/c_cafe.gif">
-            <form action= "#" method= "POST" enctype= "multipart/form-data">
-                <fieldset>
-                <legend><h3>Déjanos un mensaje</h3></legend>
-
+    
+          <section class="contact">
+            <form class="form">
+            <div class="box cat_title">
+                <h2>Déjanos un mensaje</h2>
+            </div>
+            <div class="box name">
                 <label for="name">Nombre y Apellido</label>
-                <input type="text" name="nombre_apellido" id="name" placeholder="Ej.: Carlos Fuentes" required>
-                <label for="email">Correo electronico</label>
+                 <input type="text" name="nombre_apellido" id="name" placeholder="Ej.: Carlos Fuentes" required>
+            </div>
+
+            <div class="box email">
+                 <label for="email">Correo electronico</label>
                 <input type="email" name="correo_electronico" id="email" placeholder="Ej.: carlos@fuentes.com" required>
-                <label for="topic">Asunto</label>
-                <input type="text" name="asunto" id="topic" placeholder="Escribe el asunto del mensaje" required>
-                <label for="message">Mensaje</label>
+             </div>
+            <div class="box topic">
+              <label for="topic">¿De qué quieres que conversemos?</label>
+              <input type="text" name="asunto" id="topic" placeholder="Cuéntanos" required>
+          </div>
+
+          <div class="box message">
+                <label for="message">Escribe aquí tu mensaje</label>
                 <textarea type="text" name="mensaje" id="message" required></textarea>
-                <input class="button" type="submit" name="botón" value="Enviar mensaje">
-            </fieldset>
-            </form>
-        </section>
-        <footer>
-          <span>© 2020 Factum Lab Todos los derechos reservados</span>
-              </footer>
-        
+          </div>
+          <div class= "container-fluid d-flex justify-content-center">
+              <input class="button" type="submit" name="botón" value="Enviar mensaje">
+            </div>
+    </form>
+
+    <div class="map">
+      <h3>Nos encontramos en:</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9319.836664736187!2d-76.95149515984903!3d-12.071272935711608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x669423ed7d729c9a!2sRoll%20Star%20Sushi%20Bar!5e0!3m2!1ses-419!2spe!4v1597738982616!5m2!1ses-419!2spe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    </section>
+
+  </main>
+  <footer>
+    <span class= "container-fluid d-flex justify-content-center">© 2020 Factum Lab Todos los derechos reservados</span>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </body>
 </html>
