@@ -152,13 +152,12 @@ header{
     grid-column-end: 3;
   }
   iframe {
-      margin: 3rem;
+      margin: 3rem;   
     }
   }
-    @media screen and (max-width: $screen_medium) {
-      .contact {
-        display:block
-    
+    @media screen and (max-width: $screen_small) {
+      .map {
+        display:none;
       }
     }
 
